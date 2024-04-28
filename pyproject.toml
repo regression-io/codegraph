@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "codegraph"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 readme = "docs/README.rst"
 homepage = "https://github.com/xnuinside/codegraph"
@@ -18,10 +18,12 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 matplotlib = "^3.6"
 networkx = "^2.8"
-clifier = "^0.0.3"
+mpld3 = "^0.5.10"
+dash = "^2.16.1"
+dash-cytoscape = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "7.1.3"

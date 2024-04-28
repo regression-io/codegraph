@@ -26,7 +26,7 @@ def get_python_paths_list(paths: Union[str, List]) -> List:
         path = path.as_posix()
         paths_list += [
             path
-            for path in glob.glob(path + "/*", recursive=True)
-            if path.endswith(".py") and not path.endswith("__init__.py")
+            for path in glob.glob(path + "/**/*.py", recursive=True)
+            if not path.endswith("__init__.py")
         ]
     return paths_list

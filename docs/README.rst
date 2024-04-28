@@ -63,7 +63,7 @@ Pass '-o' flag if you want only print dependencies in console and don't want gra
    codegraph /path/to/your_python_code -o
 
 
-If you want to change view and play with graph output - you can check 'vizualyzer.py'
+If you want to change view and play with graph output - you can check 'visualizer.py'
 and play with matplotlib and networkX settings.
 
 Colors meanings

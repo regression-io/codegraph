@@ -188,6 +188,9 @@ def collect_entities_usage_in_modules(
         # split by line
         code = module_content.split("\n")
         for _module in imports[path]:
+            if _module not in modules_names_map:
+                continue
+
             # search entities from other modules
             _path = modules_names_map[_module]
             entities_usage_in_modules[path].update(

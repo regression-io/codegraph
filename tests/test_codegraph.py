@@ -6,7 +6,7 @@ from codegraph.core import CodeGraph
 
 def test_main():
     module_path = (
-        pathlib.Path(__file__).parents[0] / "test_data" / "vizualyzer.py"
+        pathlib.Path(__file__).parents[0] / "test_data" / "visualizer.py"
     ).as_posix()
     args = Namespace(paths=[module_path])
     usage_graph = CodeGraph(args).usage_graph()

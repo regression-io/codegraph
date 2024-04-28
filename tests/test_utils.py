@@ -15,7 +15,7 @@ def test_get_python_paths_list():
     expected = list(
         map(
             lambda x: (pathlib.Path(__file__).parents[1] / "codegraph" / x).as_posix(),
-            ["core.py", "parser.py", "utils.py", "vizualyzer.py", "main.py"],
+            ["core.py", "parser.py", "utils.py", "visualizer.py", "main.py"],
         )
     )
     assert sorted(
